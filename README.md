@@ -23,3 +23,8 @@ Added app private instance and security group for AZ 1 & 2.
 Pushed update to AWS Cloudformation via AWS ClI. 
 
 In AWS CLI, SSH into bastion, then SSH into App1 instnce. Ping App2 instance from App1. 
+
+
+** Feb 15, 2025
+
+Added iam.yaml file. This file contains a test IAM AWS CloudFormation stack. This is the very first IAM stack I created. 
