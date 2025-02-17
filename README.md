@@ -39,3 +39,10 @@ Created ec2.yaml file. This file contains the same vpc, subnets, igw, and public
 Created asg.yaml file. This file contains same vpc from vpc.yaml and WebServerSecurityGroup from ec2.yaml. I added an auto-scaling launch configuration, auto scaling group, cloudwatch high CPU alarm, and a scaling out policy. 
 
 All deployed stacks have worked as expected. 
+
+
+** Feb 17, 2025
+
+Created s3-static.yaml file and index.html file. The s3-static.yaml file creates an S3 stack with a policy that allows public to view the object. The object is the index.html file which was copied from AWS CLI to s3 bucket. 
+
+Created rds.yaml file. This file creates a MySQL RDS. It took cloudformtion almost 40 minutes to create this stack. 
