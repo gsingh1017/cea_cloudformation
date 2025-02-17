@@ -27,4 +27,15 @@ In AWS CLI, SSH into bastion, then SSH into App1 instnce. Ping App2 instance fro
 
 ** Feb 15, 2025
 
-Added iam.yaml file. This file contains a test IAM AWS CloudFormation stack. This is the very first IAM stack I created. 
+Added iam.yaml file. This file contains a test IAM AWS CloudFormation stack. This is the very first IAM stack I created.
+
+
+** Feb 16, 2025
+
+Found error in vpc.yaml where i was adding all 6 subnets into one AZ. Changed this so there are 3 subnets in each AZ. 
+
+Created ec2.yaml file. This file contains the same vpc, subnets, igw, and public route tables from vpc.yaml. I added a two public web server instances each in a seperate AZ, a web server security group, an application load balancer (ALB), listener for ALB, and a target groups for ALB. 
+
+Created asg.yaml file. This file contains same vpc from vpc.yaml and WebServerSecurityGroup from ec2.yaml. I added an auto-scaling launch configuration, auto scaling group, cloudwatch high CPU alarm, and a scaling out policy. 
+
+All deployed stacks have worked as expected. 
